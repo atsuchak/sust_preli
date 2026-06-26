@@ -1,6 +1,8 @@
 spring:
   application:
     name: QueueStormInvestigator
+  config:
+    import: optional:file:.env[.properties]
   jackson:
     default-property-inclusion: non_null
 
