@@ -50,3 +50,11 @@ This document tracks all the architecture scaffolding, code generation, and conf
   4. `feat: add request and response dtos for analyze-ticket api`
   5. `feat: implement controllers, service stubs, and global exception handler`
   6. `chore: add docker deployment config, env example, and update readme`
+
+## 8. LLM Integration & Refinement
+* **JSON Schema Enforcement**: 
+  * Updated `GeminiLlmServiceImpl` prompt engineering to strongly enforce structured JSON responses adhering to the required schema.
+  * Added robust instructions to the LLM to prevent malformed or incomplete outputs.
+* **Jackson Dependency Resolution**:
+  * Resolved missing `ObjectMapper` dependency errors by verifying and adding the appropriate Jackson dependencies in `pom.xml`.
+  * Configured `ObjectMapper` to properly serialize/deserialize LLM JSON payloads.
