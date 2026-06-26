@@ -13,7 +13,7 @@ An AI / API SupportOps Service for Digital Finance (SUST CSE Carnival 2026 Codex
 
 ## Setup Instructions
 1. **Ensure Prerequisites**: Java 17, Maven, and optionally Docker are installed.
-2. **Clone the repository**: `git clone <your-repo-url>`
+2. **Clone the repository**: `git clone https://github.com/atsuchak/sust_preli.git`
 3. **Set up Environment Variables**: 
    - Navigate to the `queuestorm-investigator` directory.
    - Copy `.env.example` to `.env` (Note: `.env` is correctly added to `.gitignore` to prevent secret leaks).
