@@ -1,0 +1,17 @@
+{
+  "ticket_id": "TKT-001",
+  "relevant_transaction_id": "TXN-9101",
+  "evidence_verdict": "consistent",
+  "case_type": "wrong_transfer",
+  "severity": "high",
+  "department": "dispute_resolution",
+  "agent_summary": "Customer reports sending 5000 BDT via TXN-9101 to a wrong number.",
+  "recommended_next_action": "Verify TXN-9101 details with the customer. MUST NOT confirm refunds/reversals without authority.",
+  "customer_reply": "We have noted your concern about transaction TXN-9101 and our dispute team is investigating. Please allow 3 working days.",
+  "human_review_required": true,
+  "confidence": 0.9,
+  "reason_codes": [
+    "wrong_transfer",
+    "transaction_match"
+  ]
+}
