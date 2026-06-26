@@ -5,12 +5,16 @@ import com.queuestorm.investigator.enums.CaseType;
 import com.queuestorm.investigator.enums.Department;
 import com.queuestorm.investigator.enums.EvidenceVerdict;
 import com.queuestorm.investigator.enums.Severity;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class AnalyzeTicketResponse {
     @JsonProperty("ticket_id")
     private String ticketId;

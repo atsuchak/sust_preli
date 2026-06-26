@@ -26,10 +26,13 @@ public class GlobalExceptionHandler {
                 .body(Map.of("error", "Input is semantically invalid or missing required fields."));
     }
 
-    // 500 Internal Server Error (Hide stack trace/secrets)
+    // 500 Internal Server Error (Hide stack trace/secrets from user, but log internally)
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, String>> handleAllOtherExceptions(Exception ex) {
-        // Log the exception securely here without exposing stack trace to user
+        // Log the exception to the server console for debugging
+        System.err.println("INTERNAL SERVER ERROR: ");
+        ex.printStackTrace();
+        
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(Map.of("error", "An internal error occurred. Please try again later."));
     }
