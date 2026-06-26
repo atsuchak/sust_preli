@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: QueueStormInvestigator
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+
+gemini:
+  api:
+    key: ${GEMINI_API_KEY:default_key}
